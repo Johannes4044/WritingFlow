@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8FFFBFC92F1A2A1400290B8C /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 8FFFBFC82F1A2A1400290B8C /* KeyboardShortcuts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8FFFBF6A2F1A282100290B8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,16 +39,6 @@
 			path = WritingFlow;
 			sourceTree = "<group>";
 		};
-		8FFFBF6C2F1A282100290B8C /* WritingFlowTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WritingFlowTests;
-			sourceTree = "<group>";
-		};
-		8FFFBF762F1A282100290B8C /* WritingFlowUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WritingFlowUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FFFBFC92F1A2A1400290B8C /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				8FFFBF5C2F1A282000290B8C /* WritingFlow */,
-				8FFFBF6C2F1A282100290B8C /* WritingFlowTests */,
-				8FFFBF762F1A282100290B8C /* WritingFlowUITests */,
 				8FFFBF5B2F1A282000290B8C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +105,7 @@
 			);
 			name = WritingFlow;
 			packageProductDependencies = (
+				8FFFBFC82F1A2A1400290B8C /* KeyboardShortcuts */,
 			);
 			productName = WritingFlow;
 			productReference = 8FFFBF5A2F1A282000290B8C /* WritingFlow.app */;
@@ -129,9 +123,6 @@
 			);
 			dependencies = (
 				8FFFBF6B2F1A282100290B8C /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				8FFFBF6C2F1A282100290B8C /* WritingFlowTests */,
 			);
 			name = WritingFlowTests;
 			packageProductDependencies = (
@@ -152,9 +143,6 @@
 			);
 			dependencies = (
 				8FFFBF752F1A282100290B8C /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				8FFFBF762F1A282100290B8C /* WritingFlowUITests */,
 			);
 			name = WritingFlowUITests;
 			packageProductDependencies = (
@@ -195,6 +183,9 @@
 			);
 			mainGroup = 8FFFBF512F1A282000290B8C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8FFFBFC72F1A2A1400290B8C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8FFFBF5B2F1A282000290B8C /* Products */;
 			projectDirPath = "";
@@ -388,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WritingFlow/WritingFlow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
@@ -430,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WritingFlow/WritingFlow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
@@ -605,6 +598,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FFFBFC72F1A2A1400290B8C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FFFBFC82F1A2A1400290B8C /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FFFBFC72F1A2A1400290B8C /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FFFBF522F1A282000290B8C /* Project object */;
 }
